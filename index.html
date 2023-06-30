@@ -1,12 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-</head>
-<body>
-    <h1>Rock Paper Scissors</h1>
-    <script src="app.js"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/fd5d6eeda4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1 class="ml6">
+      <span class="text-wrapper">
+        <span class="letters">The Final Battle</span>
+      </span>
+    </h1>
+    <div class="container">
+      <p class="hidden ml3 op">
+        Man has one more chance to escape the terror reign of machines
+      </p>
+      <p class="hidden ml4 op">
+        Man's destiny will be determined by a simple game of Rock Paper Scissors
+      </p>
+      <p class="hidden ml5 op">
+        Can you play mankind to victory? First to 5 wins!
+      </p>
+      <div class="game-board hidden">
+        <div class="weapon-area">
+          <h3>Choose your Weapon</h3>
+          <div class="weapon-items">
+            <div class="weapon-item">
+              <i class="fa-solid fa-gem" id="rock"></i>
+            </div>
+            <div class="weapon-item paper">
+              <i class="fa-solid fa-scroll" id="paper"></i>
+            </div>
+            <div class="weapon-item">
+              <i class="fa-solid fa-scissors" id="scissors"></i>
+            </div>
+          </div>
+        </div>
+        <div class="score-area">
+          <div class="player-score">
+            <p>Your Score</p>
+            <span id="player-score">0</span>
+          </div>
+          <div class="computer-score">
+            <p>Computer Score</p>
+            <span id="computer-score">0</span>
+          </div>
+        </div>
+        <div class="playing-text-area">
+          <p class="op" id="playing-text">Let the games begin!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal that opens when the game ends -->
+    <div class="modal hidden" id="modal">
+      <div class="modal-contents">
+        <p id="modal-text">Player 1 wins!</p>
+        <button id="modal-btn">Try again?</button>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="js/animate.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
